@@ -8,7 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="css\estilos.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/scripts1.js"></script>
+
     
     
   </head>
@@ -103,30 +105,31 @@
         <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
                 <h3>Formulario de contacto</h3>
-                <form class= "needs-validation" novalidate>
+                <form id="miFormulario">
                     <p>
-                        <label for="validationCustom04" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="validationCustom04" name="NombreCompleto" required>
+                        <label  class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="Nombre" name="Nombre">
                         
                     </p>
                     <p>
-                        <label for="validationCustom05" class="form-label">Email </label>
-                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"  name="email" required >
+                        <label  class="form-label">Email </label>
+                        <input type="email" class="form-control" id="email" aria-describedby="inputGroupPrepend"  name="email"  >
                         
                     </p>
                     <p>
-                        <label for="validationCustomphone" class="form-label">Numero de contacto</label>
-                        <input type="tel" class="form-control" id="validationCustomphobe" name="phone" required>
+                        <label  class="form-label">Numero de contacto</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" >
                     </p>
                     <p>
-                        <label  for="validationCustom06" class="form-label">Asunto</label>
-                        <input type="text"   class="form-control" id="validationCustom06" name="asunto" required>
+                        <label   class="form-label">Asunto</label>
+                        <input type="text"   class="form-control" id="asu" name="asu" >
 
                     </p>
                     <p class="block">
-                       <label  for="validationCustom07" class="form-label" >Mensaje</label> 
-                        <textarea  class="form-control" id="validationCustom07" name="message"  rows="3"required></textarea>
+                       <label  f class="form-label" >Mensaje</label> 
+                        <textarea  class="form-control" id="msj" name="msj"  rows="3"></textarea>
                     </p>
+                    <div id="errores" class="alert alert-danger">Error</div>
                     <p class="block">
                         <button class="btn btn-primary"  type="submit">
                             Enviar
@@ -180,14 +183,14 @@
       </div>
     </footer>
     <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
+  
 (() => {
 'use strict'
 
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
+
 const forms = document.querySelectorAll('.needs-validation')
 
-// Loop over them and prevent submission
+n
 Array.from(forms).forEach(form => {
   form.addEventListener('submit', event => {
     if (!form.checkValidity()) {
