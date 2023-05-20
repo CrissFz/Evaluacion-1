@@ -225,8 +225,8 @@ body {
 
 
 .container .card {
-  width: 330px;
-  height: 430px;
+  width: 300px;
+  height: 350px;
   border-radius: 8px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -406,6 +406,7 @@ h1 {
   height: 200px;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+  
 }
 
 .scroll {
@@ -427,6 +428,7 @@ h1 {
   flex-wrap: wrap;
   gap: 50px;
   margin-bottom: 20px;
+  
 }
 
 .contenedor>div {
@@ -531,4 +533,10 @@ h1 {
     color:azure;    
 }
 
+ .bci img {
+  height: 300px;
+  width: 350px;
+  
+
+}
 
